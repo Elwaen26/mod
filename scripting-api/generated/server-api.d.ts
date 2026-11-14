@@ -9804,6 +9804,11 @@ declare global {
     readonly discordId: string;
 
     /**
+     * Discord username the client reported, or an empty string when it had none.
+     */
+    readonly discordName: string;
+
+    /**
      * Framework hardware identifier the client reported, or an empty string when it had none.
      */
     readonly hardwareId: string;
@@ -9972,6 +9977,11 @@ declare global {
      * Authenticated Discord identifier, or an empty string when unavailable.
      */
     readonly discordId: string;
+
+    /**
+     * Discord username the client reported, not verified by the server, or an empty string when unavailable.
+     */
+    readonly discordName: string;
 
     /**
      * Framework hardware identifier, or an empty string when unavailable.
